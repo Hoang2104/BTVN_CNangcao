@@ -23,7 +23,7 @@ void delay(uint64_t a){
     int i,j;
     for (i = 0; i <= a; i++)
     {
-        for (j = 0; j < 1000000; i++)
+        for (j = 0; j < 1000; i++)
         {
         }
     }
