@@ -21,7 +21,7 @@ void show_array(int array[], int length){
 // Hàm sắp xếp mảng từ bé đến lớn
 void insertionSortup(int array[], int length){
     int j, last;
-    for (int i = 1; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
         last = array[i];
         j = i;

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"volatile\startup_stm32f103xb.o"
+"volatile\main.o"
+"volatile\stm32f1xx_it.o"
+"volatile\stm32f1xx_hal_msp.o"
+"volatile\stm32f1xx_hal_gpio_ex.o"
+"volatile\stm32f1xx_hal_tim.o"
+"volatile\stm32f1xx_hal_tim_ex.o"
+"volatile\stm32f1xx_hal.o"
+"volatile\stm32f1xx_hal_rcc.o"
+"volatile\stm32f1xx_hal_rcc_ex.o"
+"volatile\stm32f1xx_hal_gpio.o"
+"volatile\stm32f1xx_hal_dma.o"
+"volatile\stm32f1xx_hal_cortex.o"
+"volatile\stm32f1xx_hal_pwr.o"
+"volatile\stm32f1xx_hal_flash.o"
+"volatile\stm32f1xx_hal_flash_ex.o"
+"volatile\stm32f1xx_hal_exti.o"
+"volatile\system_stm32f1xx.o"
+--strict --scatter "volatile\volatile.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "volatile.map" -o volatile\volatile.axf
